@@ -72,272 +72,241 @@ export default () => {
             dataIndex: 'col1',
             key: 'col1',
             align: 'center',
-            width: 70,
-            ...getColumnSearchProps('col1'),
+            width: 120, ...getColumnSearchProps('col1'),
         },
         {
-            title: '辐射段衬里',
+            title: '裂解原料',
+            dataIndex: 'col2',
+            key: 'col2',
+            align: 'center',
+            width: 120, ...getColumnSearchProps('col2'),
+        },
+        {
+            title: '裂解炉目前情况（注1）', children: [
+                {
+                    title: '未改造',
+                    dataIndex: 'col3',
+                    key: 'col3',
+                    align: 'center',
+                    width: 90, ...getColumnSearchProps('col3'),
+                },
+                {
+                    title: '改造',
+                    dataIndex: 'col4',
+                    key: 'col4',
+                    align: 'center',
+                    width: 90, ...getColumnSearchProps('col4'),
+                },
+            ]
+        },
+        {
+            title: '投油量，kg/h',
+            dataIndex: 'col5',
+            key: 'col5',
+            align: 'center',
+            width: 150, ...getColumnSearchProps('col5'),
+        },
+        {
+            title: '稀释蒸汽，kg/h',
+            dataIndex: 'col6',
+            key: 'col6',
+            align: 'center',
+            width: 170, ...getColumnSearchProps('col6'),
+        },
+        {
+            title: '燃料量，kg/h ',
+            dataIndex: 'col7',
+            key: 'col7',
+            align: 'center',
+            width: 120, ...getColumnSearchProps('col7'),
+        },
+        {
+            title: 'BFW流量，kg/h',
+            dataIndex: 'col8',
+            key: 'col8',
+            align: 'center',
+            width: 150, ...getColumnSearchProps('col8'),
+        },
+        {
+            title: '进入裂解炉DS温度，℃', children: [
+                {
+                    title: '设计',
+                    dataIndex: 'col9',
+                    key: 'col9',
+                    align: 'center',
+                    width: 200, ...getColumnSearchProps('col9'),
+                },
+                {
+                    title: '实际',
+                    dataIndex: 'col10',
+                    key: 'col10',
+                    align: 'center',
+                    width: 70, ...getColumnSearchProps('col10'),
+                },
+            ]
+        },
+        {
+            title: 'DS过热后（如果有）温度，℃',
             children: [
                 {
-                    title: '材料',
-                    children: [
-                        {
-                            title: '陶纤背衬',
-                            dataIndex: 'col2',
-                            key: 'col2',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col2'),
-                        },
-                        {
-                            title: '耐火砖',
-                            dataIndex: 'col3',
-                            key: 'col3',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col3'),
-                        },
-                        {
-                            title: '浇注料',
-                            dataIndex: 'col4',
-                            key: 'col4',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col4'),
-                        },
-                        {
-                            title: '纤维模块',
-                            dataIndex: 'col5',
-                            key: 'col5',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col5'),
-                        },
-                        {
-                            title: '派罗块',
-                            dataIndex: 'col6',
-                            key: 'col6',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col6'),
-                        },
-                        {
-                            title: '纳米板',
-                            dataIndex: 'col7',
-                            key: 'col7',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col7'),
-                        },
-                        {
-                            title: '其它',
-                            dataIndex: 'col8',
-                            key: 'col8',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col8'),
-                        },
-                    ]
+                    title: '设计',
+                    dataIndex: 'col11',
+                    key: 'col11',
+                    align: 'center',
+                    width: 70, ...getColumnSearchProps('col11'),
                 },
                 {
-                    title: '衬里破坏',
-                    children: [
-                        {
-                            title: '剥落',
-                            dataIndex: 'col9',
-                            key: 'col9',
-                            align: 'center',
-                            width: 70,
-                            ...getColumnSearchProps('col9'),
-                        },
-                        {
-                            title: '粉化',
-                            dataIndex: 'col10',
-                            key: 'col10',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col10'),
-                        },
-                        {
-                            title: '龟裂',
-                            dataIndex: 'col11',
-                            key: 'col11',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col11'),
-                        },
-                        {
-                            title: '倒塌',
-                            dataIndex: 'col12',
-                            key: 'col12',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col12'),
-                        },
-                        {
-                            title: '其它',
-                            dataIndex: 'col13',
-                            key: 'col13',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col13'),
-                        },
-                    ]
+                    title: '实际',
+                    dataIndex: 'col12',
+                    key: 'col12',
+                    align: 'center',
+                    width: 70, ...getColumnSearchProps('col12'),
                 },
+            ]
+        },
+        {
+            title: '蒸汽发生量，kg/h',
+            dataIndex: 'col13',
+            key: 'col13',
+            align: 'center',
+            width: 200, ...getColumnSearchProps('col13'),
+        },
+        {
+            title: 'SS 过热后温度,℃',
+            dataIndex: 'col14',
+            key: 'col14',
+            align: 'center',
+            width: 200, ...getColumnSearchProps('col14'),
+        },
+        {
+            title: '炉外壁平均温度，℃',
+            dataIndex: 'col15',
+            key: 'col15',
+            align: 'center',
+            width: 200, ...getColumnSearchProps('col15'),
+        },
+        {
+            title: '运转周期，天', children: [
                 {
-                    title: '外壁超温与否',
-                    children: [
-                        {
-                            title: '部位',
-                            dataIndex: 'col14',
-                            key: 'col14',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col14'),
-                        },
-                        {
-                            title: '温度',
-                            dataIndex: 'col15',
-                            key: 'col15',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col15'),
-                        },
-                    ]
-                },
-                {
-                    title: '衬里破坏发生部位及解决方案',
+                    title: '设计',
                     dataIndex: 'col16',
                     key: 'col16',
                     align: 'center',
-                    width: 400,
-                    ...getColumnSearchProps('col16'),
+                    width: 170, ...getColumnSearchProps('col16'),
                 },
                 {
-                    title: '其它主要问题',
+                    title: '实际',
                     dataIndex: 'col17',
                     key: 'col17',
                     align: 'center',
-                    width: 240, ...getColumnSearchProps('col17'),
-                },
-                {
-                    title: '运行一段时间后针对性维护措施',
-                    dataIndex: 'col18',
-                    key: 'col18',
-                    align: 'center',
-                    width: 400, ...getColumnSearchProps('col18'),
+                    width: 70, ...getColumnSearchProps('col17'),
                 },
             ]
         },
         {
-            title: '对流段衬里',
-            children: [
+            title: '运转周期控制因素', children: [
                 {
-                    title: '衬里破坏',
-                    children: [
-                        {
-                            title: '剥落',
-                            dataIndex: 'col19',
-                            key: 'col19',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col19'),
-                        },
-                        {
-                            title: '粉化',
-                            dataIndex: 'col20',
-                            key: 'col20',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col20'),
-                        },
-                        {
-                            title: '龟裂',
-                            dataIndex: 'col21',
-                            key: 'col21',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col21'),
-                        },
-                        {
-                            title: '倒塌',
-                            dataIndex: 'col22',
-                            key: 'col22',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col22'),
-                        },
-                        {
-                            title: '其它',
-                            dataIndex: 'col23',
-                            key: 'col23',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col23'),
-                        },
-                    ]
-                },
-                {
-                    title: '外壁超温',
-                    children: [
-                        {
-                            title: '部位',
-                            dataIndex: 'col24',
-                            key: 'col24',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col24'),
-                        },
-                        {
-                            title: '温度',
-                            dataIndex: 'col25',
-                            key: 'col25',
-                            align: 'center',
-                            width: 70, ...getColumnSearchProps('col25'),
-                        },
-                    ]
-                },
-
-                {
-                    title: '衬里破坏发生部位及解决方案',
-                    dataIndex: 'col26',
-                    key: 'col26',
+                    title: '炉管壁温',
+                    dataIndex: 'col18',
+                    key: 'col18',
                     align: 'center',
-                    width: 400, ...getColumnSearchProps('col26'),
+                    width: 200, ...getColumnSearchProps('col18'),
                 },
                 {
-                    title: '其它主要问题',
-                    dataIndex: 'col27',
-                    key: 'col27',
+                    title: 'TLE出口温度',
+                    dataIndex: 'col19',
+                    key: 'col19',
                     align: 'center',
-                    width: 240, ...getColumnSearchProps('col27'),
+                    width: 150, ...getColumnSearchProps('col19'),
                 },
                 {
-                    title: '运行一段时间后针对性维护措施',
-                    dataIndex: 'col28',
-                    key: 'col28',
+                    title: '文丘里压降',
+                    dataIndex: 'col20',
+                    key: 'col20',
                     align: 'center',
-                    width: 400, ...getColumnSearchProps('col28'),
+                    width: 150, ...getColumnSearchProps('col20'),
+                },
+                {
+                    title: '生产计划',
+                    dataIndex: 'col21',
+                    key: 'col21',
+                    align: 'center',
+                    width: 120, ...getColumnSearchProps('col21'),
                 },
             ]
         },
+        {
+            title: '是否预硫化', children: [
+                {
+                    title: '是',
+                    dataIndex: 'col22',
+                    key: 'col22',
+                    align: 'center',
+                    width: 70, ...getColumnSearchProps('col22'),
+                },
+                {
+                    title: '否',
+                    dataIndex: 'col23',
+                    key: 'col23',
+                    align: 'center',
+                    width: 70, ...getColumnSearchProps('col23'),
+                },
+            ]
+        },
+        {
+            title: '注硫剂类型',
+            dataIndex: 'col24',
+            key: 'col24',
+            align: 'center',
+            width: 150, ...getColumnSearchProps('col24'),
+        },
+        {
+            title: '硫化物注入指标，PPM',
+            dataIndex: 'col25',
+            key: 'col25',
+            align: 'center',
+            width: 240, ...getColumnSearchProps('col25'),
+        }
     ];
 
 
-    let nameshow = 'infotable4_1';
+    let nameshow = 'infotable5_1';
     const [reactorStatusTable, setReactorStatusTable] = useState([]);
 
-    // async function alter_table() {
-    //     let res = await get('infobase/tables/infotable4_2');
-    //     setReactorStatusTable(res);
-    // }
-
-    // alter_table();
     const reactorComment = [];
 
     let comment = reactorComment;
     let tableHeader = reactorStatusHeader;
-    let tableContent = reactorStatusTable;
     const [searchText, setSearchText] = useState('');
     const [searchedColumn, setSearchedColumn] = useState(reactorComment);
+
+    const host = "http://ys.nuclearsilo.me:8080/";
+    // const host = '';
+    const url = host + '/infobase/tables/infotable7_1';
+    useEffect(() => {
+        async function fetchData() {
+            const res = await fetch(url);
+            res.json().then(res => setReactorStatusTable(res));
+            // console.log(res);
+        }
+
+        fetchData();
+    })
+    // fetch(url).then(res => res.json()).then(data => {
+    //     console.log(url)
+    //     setReactorStatusTable(data);
+    //     console.log(data);
+    // })
 
 
     return (<PageContainer>
         <Card style={{height: 1000}} bodyStyle={{paddingTop: 72}}>
             <Table
                 columns={tableHeader}
-                dataSource={tableContent}
+                dataSource={reactorStatusTable}
                 size="small"
                 pagination={{size: 'small', position: ['bottomCenter'], pageSize: 20}}
-                scroll={{x: 1300}}
+                scroll={{x: 1000}}
             />
             <div>
                 {comment}
